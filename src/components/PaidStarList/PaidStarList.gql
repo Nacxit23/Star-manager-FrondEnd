@@ -1,0 +1,29 @@
+import gql from 'graphql-tag'
+
+export const paidStarList = gql`
+query paidStarList($curso: String, $status: statusOption) {
+  paidStarList(first: 10, after: $curso) {
+    edges {
+      node {
+        id
+        name
+        stars(first: 3, status: $status) {
+          edges {
+            node {
+              description
+              paidAt
+            }
+          }
+          pageInfo {
+            total
+          }
+        }
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
+`

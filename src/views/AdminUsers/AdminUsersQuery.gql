@@ -1,0 +1,31 @@
+import gql from 'graphql-tag';
+
+export const usersAdmin = gql `
+  query usersAdmin($curso: String) {
+  usersAdmin(first: 10, after: $curso) {
+    edges {
+      node {
+        email
+        name
+        isAdmin
+        id
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
+`;
+
+export const createAdmin = gql `
+  mutation createAdmin($id: ID!){
+    createAdmin(id: $id){
+      email
+      name
+      isAdmin
+      id
+    }
+  }
+`;

@@ -1,0 +1,38 @@
+import gql from 'graphql-tag'
+
+export const users = gql`
+query starList($curso: String, $status: statusOption,){
+  users(first: 10, after: $curso) {
+    edges {
+      node {
+        id
+        name
+        stars(first: 3, status: $status) {
+          edges {
+            node {
+              id
+              description
+              paidAt
+            }
+          }
+
+        pageInfo{
+          total
+        }
+        }
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}`
+
+export const deleteStar = gql `
+mutation deleteStar($id: ID!){
+  deleteStar(id: $id){
+    id
+  }
+}`
+

@@ -1,0 +1,13 @@
+import gql from 'graphql-tag'
+
+export const create = gql`
+mutation createUser($input: CreateUser!){
+    createUser(input: $input){
+        email,
+        firstName,
+        lastName,
+    }
+}
+`
+
+

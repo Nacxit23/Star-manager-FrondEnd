@@ -1,0 +1,50 @@
+.container {
+  align-content: center;
+  color: gray;
+  font-family: 'Assistant', sans-serif;
+  padding: 16px;
+}
+.main {
+  text-align: center;
+  width: 70%;
+  height: 70%;
+  margin-left: 50px;
+}
+.eventNameColumn {
+  width: 400px;
+  height: 60px;
+  margin-left: 65px;
+}
+.list {
+  margin-left: 50px;
+}
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(243, 247, 253);
+  border-radius: 10px;
+  height: 100px;
+  width: 50%;
+  padding: 20px;
+  margin-top: 50px;
+}
+.form button {
+  width: 100px;
+  padding: 10px 10px;
+  font-family: 'Assistant', sans-serif;
+  border-radius: 5px;
+  color: #18ce84;
+  background-color: rgb(221, 247, 234);
+  border-bottom:   5px;
+  text-decoration: none;
+  transition: 2s;
+  font-size: 20px;
+  border: none;
+}
+.form button:hover {
+  background-color: rgb(24, 206, 132);
+  color: #ffffff;
+}
+.button i {
+  padding-left: 80px;
+}

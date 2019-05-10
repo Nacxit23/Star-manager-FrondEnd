@@ -1,0 +1,48 @@
+import gql from 'graphql-tag'
+export const comments = gql `
+query comments($id: ID!) {
+  commentList: node(id: $id) {
+    ... on Event {
+      id
+      name
+      date
+      users(first: 10){
+        edges{
+          node{
+            name
+          }
+        }
+      }
+      comments(first: 10) {
+        edges {
+          node {
+            description
+            user {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`;
+
+export const create = gql `
+mutation createComments($input: CreateComments!){
+  createComments(input: $input){
+    description
+    eventId
+  }
+}
+
+`;
+
+export const update = gql `
+mutation updateComments($input: updateComments!){
+  updateComments(input: $input){
+    description
+    eventId
+  }
+}
+`;

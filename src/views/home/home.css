@@ -1,0 +1,19 @@
+.containerRoute {
+    margin-left: 75.5px;
+    margin-right: 75.5px;
+    background-color: #ffff;
+    padding: 50px;
+    height: 79.5vh;
+    font-family: 'Assistant', sans-serif;
+    height: 100%;
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.v-enter,
+.v-leave-to {
+    opacity: 0;
+}

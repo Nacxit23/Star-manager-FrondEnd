@@ -1,0 +1,18 @@
+import gql from 'graphql-tag'
+
+export const createStar = gql`
+mutation createStar($input: CreateStarInput!){
+  createStar(input: $input){
+    id
+    description
+  }
+}
+`
+export const usersSelect =  gql`
+query usersSelect {
+  usersSelect {
+    id
+    name
+  }
+}
+`

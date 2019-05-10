@@ -1,0 +1,11 @@
+.fontSignUp {
+    text-decoration: none;
+    color: #495057;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.fontSignUp:hover {
+    color: #2DBEF9;
+    transition: 0.2s;
+}

@@ -1,0 +1,102 @@
+.navBar {
+    margin-left: 75.5px;
+    margin-right: 75.5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid #dee2e6 !important;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    font-family: 'Sniglet', cursive;
+}
+
+div a img {
+    width: 200px;
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.navBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navBarItem {
+    display: list-item;
+    padding-top: 5px;
+}
+
+.navBarItem>a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navBarItem a:hover {
+    color: rgb(45, 190, 249);
+}
+
+
+.navBarItem p img {
+    width: 20px;
+}
+
+.dropDowns {
+    position: relative;
+    background-color: #dee2e6;
+    align-items: end;
+}
+
+.navBar a {
+    color: #AEB7C4;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.exitsFront {
+    background-color: white;
+    color: #AEB7C4;
+    list-style: none;
+    text-decoration: none;
+    transition: 1.4s;
+    padding-right: 60px;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+}
+
+.exitsFront a:hover {
+    color: rgb(45, 190, 249);
+    transition: 1.4s;
+}
+
+.exitsFront a i {
+    padding-left: 10px;
+}
+
+.imgItem {
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+
+.usersInformation {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.elementAdmin {
+    padding-left: 80px;
+}

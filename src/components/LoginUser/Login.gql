@@ -1,0 +1,11 @@
+import gql from 'graphql-tag'
+
+export default gql`
+  mutation loginUser($input: LoginUser!) {
+    loginUser(input: $input) {
+      token,
+    }
+  }
+`
+
+

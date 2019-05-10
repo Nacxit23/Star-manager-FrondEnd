@@ -1,0 +1,27 @@
+import gql from 'graphql-tag'
+export const events = gql`
+query events {
+    events {
+      id
+      name
+      date
+    }
+  }
+  `;
+  
+export const update = gql `
+mutation updateEvent($input: UpdateEvent!) {
+    updateEvent(input: $input) {
+      date
+    }
+  }
+  `;
+
+export const deleteEvent = gql `
+mutation deleteEvent($id: ID!){
+  deleteEvent(id: $id) {
+    id
+  }
+}
+
+ `;
